@@ -1,0 +1,75 @@
+body{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #00aeff; 
+}
+#titulo{
+    margin: 10px;
+    text-align: center;
+    font-size: 40px;  
+}
+#reset{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 5px 45px rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+.stage{
+    height: 100%;
+    width: 35%;
+    border: 3px solid white;
+    border-radius: 15px;
+    margin: auto;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+}
+.piece{
+    width: 70px;
+    height: 70px;
+    color: white;
+    display: inline-block;
+    margin: 1px;
+    background-color: white;
+    font-size: 26px;
+    border: none;
+}
+.piece:hover{
+    background-color: #00e1ff;
+    color: rgb(0, 225, 255);
+}
+.x{
+    position: relative;
+}
+.x::after{
+    position: absolute;
+    content: "\2716";
+    color: black;
+    font-size: 30px;
+    line-height: 60px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.o{
+    position: relative;
+}
+.o::after{
+    position: absolute;
+    content: "\26AB" ;
+    color: black;
+    font-size: 30px;
+    line-height: 60px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
